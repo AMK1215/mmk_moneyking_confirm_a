@@ -6,14 +6,14 @@ use App\Enums\StatusCode;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Slot\CancelBetNResultRequest;
 use App\Models\User;
+use App\Models\Webhook\Bet;
 use App\Models\Webhook\BetNResult;
+use App\Models\Webhook\Result;
 use App\Services\PlaceBetWebhookService;
 use App\Traits\UseWebhook;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
-use App\Models\Webhook\Bet;
-use App\Models\Webhook\Result;
 
 class CancelBetNResultController extends Controller
 {
@@ -35,36 +35,35 @@ class CancelBetNResultController extends Controller
                     return $this->buildErrorResponse(StatusCode::InvalidSignature, $player->wallet->balanceFloat ?? 0);
                 }
 
-                // check for TranID not found
-                $existingtranId = Bet::where('bet_id', $transaction['TranId'])->first();
-                if (! $existingtranId) {
+                // Check for TranID not found
+                $existingtranId = BetNResult::where('tran_id', $transaction['TranId'])->first();
 
-                    // If TranID is not found, return a success response with the current balance
-                    $Balance = $request->getMember()->balanceFloat;
+                if ($existingtranId && $existingtranId->status === 'processed') {
+                    // Log the cancellation attempt for an already processed transaction
+                    Log::info('Cancellation not allowed - result already processed', ['TranId' => $existingtranId->tran_id]);
 
-                    //return $this->buildErrorResponse(StatusCode::BetTransactionNotFound, $Balance);
-                return $this->buildSuccessResponse($player->wallet->balanceFloat ?? 0);
+                    // Return a success response with the player's current balance
+                    $balance = $request->getMember()->balanceFloat;
 
+                    return $this->buildErrorResponse(StatusCode::NotEligibleCancel, $balance);
                 }
 
                 // $existingTransaction = BetNResult::where('tran_id', $transaction['TranId'])->first();
-
-
 
                 // if ($this->isTransactionProcessed($existingTransaction)) {
                 //     return $this->buildErrorResponse(StatusCode::NotEligibleCancel, $player->wallet->balanceFloat);
                 // }
 
                 // Check if a result exists for the round (cannot cancel if result exists)
-                $associatedResult = Bet::where('bet_id', $transaction['TranId'])->first();
-                if ($associatedResult) {
-                    Log::info('Cancellation not allowed - result already processed', ['TranId' => $transaction['TranId']]);
+                // $associatedResult = Bet::where('bet_id', $transaction['TranId'])->first();
+                // if ($associatedResult) {
+                //     Log::info('Cancellation not allowed - result already processed', ['TranId' => $transaction['TranId']]);
 
-                    // Return 900500 Not Eligible Cancel without adjusting balance
-                    return $this->buildErrorResponse(StatusCode::NotEligibleCancel, $player->wallet->balanceFloat);
-                }
+                //     // Return 900500 Not Eligible Cancel without adjusting balance
+                //     return $this->buildErrorResponse(StatusCode::NotEligibleCancel, $player->wallet->balanceFloat);
+                // }
 
-                $this->processTransaction($associatedResult, $transaction, $player);
+                $this->processTransaction($existingtranId, $transaction, $player);
             }
 
             DB::commit();
@@ -86,11 +85,11 @@ class CancelBetNResultController extends Controller
     private function validateSignature(array $transaction): bool
     {
         $generatedSignature = $this->generateSignature($transaction);
-         Log::debug('Signature validation', [
-        'generated_signature' => $generatedSignature,
-        'provided_signature' => $transaction['Signature'],
-        'transaction_data' => $transaction, // Optional: log the entire transaction for detailed debugging
-    ]);
+        Log::debug('Signature validation', [
+            'generated_signature' => $generatedSignature,
+            'provided_signature' => $transaction['Signature'],
+            'transaction_data' => $transaction, // Optional: log the entire transaction for detailed debugging
+        ]);
 
         return $generatedSignature === $transaction['Signature'];
     }

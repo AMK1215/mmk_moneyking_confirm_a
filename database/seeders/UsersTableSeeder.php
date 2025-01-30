@@ -17,7 +17,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $admin = $this->createUser(UserType::Admin, 'Owner', 'superman', '09123456789');
+        $admin = $this->createUser(UserType::Admin, 'Owner', 'monkeyking', '09123456789');
         (new WalletService)->deposit($admin, 10 * 100_00000, TransactionName::CapitalDeposit);
 
         $master = $this->createUser(UserType::Master, 'Master 1', 'MK898437', '09112345678', $admin->id);
@@ -38,14 +38,14 @@ class UsersTableSeeder extends Seeder
         $agent_4 = $this->createUser(UserType::Agent, 'Agent 4', 'MKA898740', '09112345677', $master_2->id, 'r9Bv51Qh');
         (new WalletService)->transfer($master_2, $agent_4, 2 * 100_000, TransactionName::CreditTransfer);
 
-        $player_1 = $this->createUser(UserType::Player, 'Player 1', 'SPM000001', '09111111111', $agent_1->id);
+        $player_1 = $this->createUser(UserType::Player, 'Player 1', 'MKP000001', '09111111111', $agent_1->id);
         (new WalletService)->transfer($agent_1, $player_1, 30000, TransactionName::CreditTransfer);
 
-        $player2 = $this->createUser(UserType::Player, 'Player3', 'SPM000003', '09111111113', $agent_1->id);
+        $player2 = $this->createUser(UserType::Player, 'Player3', 'MKP000003', '09111111113', $agent_1->id);
         (new WalletService)->transfer($agent_1, $player2, 0.00, TransactionName::CreditTransfer);
-        $player3 = $this->createUser(UserType::Player, 'Player4', 'SPM000004', '09111111114', $agent_1->id);
+        $player3 = $this->createUser(UserType::Player, 'Player4', 'MKP000004', '09111111114', $agent_1->id);
         (new WalletService)->transfer($agent_1, $player3, 0.00, TransactionName::CreditTransfer);
-        $player4 = $this->createUser(UserType::Player, 'Player5', 'SPM000005', '09111111115', $agent_1->id);
+        $player4 = $this->createUser(UserType::Player, 'Player5', 'MKP000005', '09111111115', $agent_1->id);
         (new WalletService)->transfer($agent_1, $player4, 0.00, TransactionName::CreditTransfer);
 
         $systemWallet = $this->createUser(UserType::SystemWallet, 'SystemWallet', 'systemWallet', '09222222222');
