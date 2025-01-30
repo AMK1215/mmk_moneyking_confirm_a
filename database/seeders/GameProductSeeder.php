@@ -213,6 +213,23 @@ class GameProductSeeder extends Seeder
                 'status' => 1,
                 'game_list_status' => 1,
             ],
+
+            [
+                'provider_code' => 'GPD',
+                'provider_name' => 'GamingPanda',
+                'is_active' => true,
+                'order' => 26,
+                'status' => 0,
+                'game_list_status' => 0,
+            ],
+            [
+                'provider_code' => 'R88',
+                'provider_name' => 'Rich88',
+                'is_active' => true,
+                'order' => 27,
+                'status' => 0,
+                'game_list_status' => 0,
+            ],
         ];
 
         DB::table('products')->insert($gameProviders);

@@ -2,13 +2,11 @@
 
 namespace Database\Seeders;
 
-
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File;
 use App\Models\Admin\GameList;
-
-class JDBGameTableSeeder extends Seeder
+class R88LotterySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,15 +14,15 @@ class JDBGameTableSeeder extends Seeder
     public function run(): void
     {
         // Load the JSON file
-        $json = File::get(base_path('database/seeders/data/JDB.json'));
+        $json = File::get(base_path('database/seeders/data/R88Lottery.json'));
         $data = json_decode($json, true);
 
         // Loop through each game in the JSON data
         foreach ($data['Game'] as $game) {
             GameList::create([
                 'game_id' => $game['GameId'],
-                'game_type_id' => 2,  // Fixed value for game_type_id
-                'product_id' => 6,  // Fixed value for product_id
+                'game_type_id' => 9,  // Fixed value for game_type_id
+                'product_id' => 27,  // Fixed value for product_id
                 'status' => 1,  // Default value for status
                 'hot_status' => 0,  // Default value for hot_status
                 'game_code' => $game['GameCode'],

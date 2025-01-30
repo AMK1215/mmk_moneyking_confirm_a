@@ -53,6 +53,13 @@ class DatabaseSeeder extends Seeder
             NoLimitCitySeeder::class,
             EvolutionSeeder::class,
             SAGamingSeeder::class,
+            GPDSlotSeeder::class,
+            GPDArcadeSeeder::class,
+            GPDTableSeeder::class,
+            GPDLotterySeeder::class,
+            R88SlotSeeder::class,
+            R88ArcadeSeeder::class,
+            R88LotterySeeder::class,
 
         ]);
 
