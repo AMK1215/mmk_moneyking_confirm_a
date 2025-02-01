@@ -10,7 +10,7 @@
             <div class="text-center mt-3">
               <img src="{{ asset('/assets/img/logo.png') }}" alt="" style="width: 120px; height: auto" />
             </div>
-            <h4 class="text-center mt-3 text-white">Superman</h4>
+            <h4 class="text-center mt-3 text-white">Money King 7</h4>
             <h5 class="text-center mt-3 text-white">Admin Login</h5>
             {{-- <p class="text-center text-white ">Enter your userId   and password to sign in</p> --}}
             <form action="{{ route('login') }}" method="post" class="px-3 pb-4 pt-3">
