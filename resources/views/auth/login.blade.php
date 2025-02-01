@@ -2,7 +2,7 @@
 
 
 <body>
-  <div class="container-fluid" id="main" style="background: linear-gradient(90deg, rgba(199,111,0,1) 0%, rgba(147,94,0,1) 35%, rgba(255,181,0,1) 100%);">
+  <div class="container-fluid" id="main" style="background-image: url({{ asset('/assets/img/background.webp') }}); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh">
     <div class="pt-5">
       <div class="row">
         <div class="col-md-4 offset-md-4">
