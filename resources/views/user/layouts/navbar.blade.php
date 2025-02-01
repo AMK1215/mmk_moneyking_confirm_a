@@ -1,7 +1,7 @@
  <div class="d-flex justify-content-between align-items-center fixed-top mx-auto navs">
    <div class="nav-img ms-2">
      <a href="{{ url('/') }}" class="text-decoration-none" style="color: #2ec59c; font-size: 18px">
-       <img src="https://delightmyanmar.pro/user_app/assets/img/logo.png" alt="logo" style="width: 60px; height: 60px" />
+       <img src="{{ asset('assets/img/logo.png') }}" alt="logo" style="width: 60px; height: 60px" />
      </a>
    </div>
    <div class="nav-login">
