@@ -2,7 +2,7 @@
 
 
 <body>
-  <div class=" container-fluid" id="main">
+  <div class="container-fluid" id="main" style="background: linear-gradient(90deg, rgba(31,31,31,1) 0%, rgba(160,160,163,1) 35%, rgba(26,26,32,1) 100%);">
     <div class="pt-5">
       <div class="row">
         <div class="col-md-4 offset-md-4">
