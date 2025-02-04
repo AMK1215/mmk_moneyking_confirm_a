@@ -214,7 +214,7 @@ class GameTypeProductTableSeeder extends Seeder
             ],
             [
                 'product_id' => 27,  // FUNTA
-                'game_type_id' => 8,  // Arcade
+                'game_type_id' => 9,  // Arcade
                 'image' => 'rich_88.png',
                 'rate' => '1.0000',
             ],
