@@ -176,19 +176,19 @@ class GameTypeProductTableSeeder extends Seeder
                 'image' => 'sa_gamin_casino.webp',
                 'rate' => '1.0000',
             ],
-             [
+            [
                 'product_id' => 26,  // FUNTA
                 'game_type_id' => 2,  // Arcade
                 'image' => 'gaming_panda.png',
                 'rate' => '1.0000',
             ],
-             [
+            [
                 'product_id' => 26,  // FUNTA
                 'game_type_id' => 4,  // Arcade
                 'image' => 'gaming_panda.png',
                 'rate' => '1.0000',
             ],
-             [
+            [
                 'product_id' => 26,  // FUNTA
                 'game_type_id' => 5,  // Arcade
                 'image' => 'gaming_panda.png',
