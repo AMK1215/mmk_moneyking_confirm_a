@@ -219,16 +219,16 @@ class GameProductSeeder extends Seeder
                 'provider_name' => 'GamingPanda',
                 'is_active' => true,
                 'order' => 26,
-                'status' => 0,
-                'game_list_status' => 0,
+                'status' => 1,
+                'game_list_status' => 1,
             ],
             [
                 'provider_code' => 'R88',
                 'provider_name' => 'Rich88',
                 'is_active' => true,
                 'order' => 27,
-                'status' => 0,
-                'game_list_status' => 0,
+                'status' => 1,
+                'game_list_status' => 1,
             ],
         ];
 

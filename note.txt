@@ -1,8 +1,10 @@
 
-php artisan migrate --path=/database/migrations/2024_10_14_042230_add_version_to_wallets_table.php
+php artisan migrate --path=/database/migrations/2025_02_04_040800_add_session_id_to_users_table.php
+
+php artisan make:migration add_session_id_to_users_table --table=users
 
 // to remove laravel log
-php -r "file_put_contents('/var/www/luckym_thb_confirm_a/storage/logs/laravel.log', '');"
+php -r "file_put_contents('/var/www/mmk_moneyking_confirm_a/storage/logs/laravel.log', '');"
 // created dev branch for kzt
 
 dead lock = show variables like '%dead%'; /  set global innodb_print_all_deadlocks=ON;
