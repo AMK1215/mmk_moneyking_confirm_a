@@ -4,7 +4,7 @@
 <div class="row">
   <div class="col-12">
     <div class="container mb-3">
-      <a class="btn btn-icon btn-2 btn-primary float-end me-5" href="{{ route('admin.bannerAds.index') }}">
+      <a class="btn btn-icon btn-2 btn-primary float-end me-5" href="{{ route('admin.adsbanners.index') }}">
         <span class="btn-inner--icon mt-1"><i class="material-icons">arrow_back</i>Back</span>
       </a>
     </div>
@@ -18,7 +18,7 @@
               </div>
             </div>
             <div class="card-body">
-              <form role="form" class="text-start" action="{{ route('admin.bannerAds.store') }}" method="post" enctype="multipart/form-data">
+              <form role="form" class="text-start" action="{{ route('admin.adsbanners.store') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="custom-form-group">
                   <label for="title">Mobile Image<span class="text-danger">*</span></label>
@@ -33,10 +33,6 @@
                   @error('desktop_image')
                   <span class="text-danger">*{{ $message }}</span>
                   @enderror
-                </div>
-                <div class="custom-form-group">
-                  <label for="title">Description</label>
-                  <textarea type="file" class="form-control" id="" name="description" style="border: 1px solid gray;"></textarea>
                 </div>
                 @if(Auth::user()->hasRole('Master'))
                 <div class="mb-3">

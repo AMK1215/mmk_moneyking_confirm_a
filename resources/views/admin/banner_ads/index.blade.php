@@ -12,7 +12,7 @@
           </div>
           <div class="ms-auto my-auto mt-lg-0 mt-4">
             <div class="ms-auto my-auto">
-              <a href="{{ route('admin.bannerAds.create') }}" class="btn bg-gradient-primary btn-sm mb-0">+&nbsp; Add New Ads</a>
+              <a href="{{ route('admin.adsbanners.create') }}" class="btn bg-gradient-primary btn-sm mb-0">+&nbsp; Add New Ads</a>
             </div>
           </div>
         </div>
@@ -38,11 +38,11 @@
                 <img width="100px" class="img-thumbnail" src="{{ $banner->desktop_image_url }}" alt="">
               </td>
               <td>
-                <a href="{{ route('admin.bannerAds.edit', $banner->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Edit Banner"><i class="material-icons-round text-secondary position-relative text-lg">mode_edit</i></a>
-                <a href="{{ route('admin.bannerAds.show', $banner->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Preview Banner Detail">
+                <a href="{{ route('admin.adsbanners.edit', $banner->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Edit Banner"><i class="material-icons-round text-secondary position-relative text-lg">mode_edit</i></a>
+                <a href="{{ route('admin.adsbanners.show', $banner->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Preview Banner Detail">
                   <i class="material-icons text-secondary position-relative text-lg">visibility</i>
                 </a>
-                <form class="d-inline" action="{{ route('admin.bannerAds.destroy', $banner->id) }}" method="POST">
+                <form class="d-inline" action="{{ route('admin.adsbanners.destroy', $banner->id) }}" method="POST">
                   @csrf
                   @method('DELETE')
                   <button type="submit" class="transparent-btn" data-bs-toggle="tooltip" data-bs-original-title="Delete Banner">

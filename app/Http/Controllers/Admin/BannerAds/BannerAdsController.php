@@ -56,7 +56,6 @@ class BannerAdsController extends Controller
             'desktop_image' => 'required|image|max:2048', // Ensure it's an image with a size limit
             'type' => $isMaster ? 'required' : 'nullable',
             'agent_id' => ($isMaster && $request->type === 'single') ? 'required|exists:users,id' : 'nullable',
-            'description' => 'nullable',
         ]);
         $type = $request->type ?? 'single';
         $mobile_image = $this->handleImageUpload($request->mobile_image, 'banners_ads');
@@ -67,7 +66,6 @@ class BannerAdsController extends Controller
             $bannerAds = BannerAds::create([
                 'mobile_image' => $mobile_image,
                 'desktop_image' => $desktop_image,
-                'description' => $request->description,
             ]);
             BannerAdsAgent::create([
                 'banner_ads_id' => $bannerAds->id,
@@ -77,7 +75,6 @@ class BannerAdsController extends Controller
             $bannerAds = BannerAds::create([
                 'mobile_image' => $mobile_image,
                 'desktop_image' => $desktop_image,
-                'description' => $request->description,
             ]);
             foreach ($user->agents as $agent) {
                 BannerAdsAgent::create([
@@ -196,8 +193,6 @@ class BannerAdsController extends Controller
      */
     private function UpdateData(Request $request, $bannerAds)
     {
-        $updateData = ['description' => $request->input('description')];
-
         if ($request->hasFile('mobile_image')) {
             $updateData['mobile_image'] = $this->handleImageUpload($request->file('mobile_image'), 'banners_ads');
         } else {

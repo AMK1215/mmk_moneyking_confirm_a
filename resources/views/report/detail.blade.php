@@ -17,7 +17,7 @@
                                 <select name="product_id" id="" class="form-control">
                                     <option value="">Select Product type</option>
                                     @foreach($productTypes as $type)
-                                    <option value="{{$type->id}}">{{$type->provider_name}}</option>
+                                    <option value="{{$type->id}}" {{ $type->id == request()->product_id ? 'selected' : ''}}>{{$type->provider_name}}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -58,6 +58,7 @@
                         <th>Product Name</th>
                         <th>Game Name</th>
                         <th>Valid Bet</th>
+                        <th>Total Win Amount</th>
                         <th>Win/Lose Amt</th>
                         <th>Created At</th>
                     </thead>
@@ -70,9 +71,10 @@
                             <td>{{$detail->provider_name}}</td>
                             <td>{{$detail->game_name}}</td>
                             <td>{{number_format($detail->total_bet_amount, 2)}}</td>
+                            <td>{{number_format($detail->win_amount, 2)}}</td>
                             <td><span class="{{$detail->net_win > 0 ? 'text-success' : 'text-danger' }}">{{number_format($detail->net_win, 2)}}</span></td>
                             <td>{{$detail->date}}</td>
-                            </tr>
+                        </tr>
                         @endforeach
                     </tbody>
                 </table>
@@ -89,12 +91,7 @@
             fixedHeight: false,
             perPage: 7
         });
+
     };
-</script>
-<script>
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
 </script>
 @endsection

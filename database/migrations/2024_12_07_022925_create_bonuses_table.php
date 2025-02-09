@@ -20,6 +20,7 @@ return new class extends Migration
             $table->unsignedBigInteger('before_amount');
             $table->unsignedBigInteger('after_amount')->nullable();
             $table->unsignedBigInteger('created_id');
+            $table->integer('status')->default(1);
             $table->string('remark')->nullable();
             $table->timestamps();
 
