@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->tinyInteger('status')->default(0);
             $table->longText('note')->nullable();
+            $table->integer('before_amount')->nullable();
+            $table->integer('after_amount')->nullable();
             $table->string('type')->default('manually');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('bank_id')->references('id')->on('banks')->onDelete('cascade');

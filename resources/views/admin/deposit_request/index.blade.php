@@ -1,61 +1,4 @@
 @extends('admin_layouts.app')
-@section('styles')
-<style>
-  .transparent-btn {
-    background: none;
-    border: none;
-    padding: 0;
-    outline: none;
-    cursor: pointer;
-    box-shadow: none;
-    appearance: none;
-    /* For some browsers */
-  }
-
-
-  .custom-form-group {
-    margin-bottom: 20px;
-  }
-
-  .custom-form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
-  }
-
-  .custom-form-group input,
-  .custom-form-group select {
-    width: 100%;
-    padding: 10px 15px;
-    border: 1px solid #e1e1e1;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #333;
-  }
-
-  .custom-form-group input:focus,
-  .custom-form-group select:focus {
-    border-color: #d33a9e;
-    box-shadow: 0 0 5px rgba(211, 58, 158, 0.5);
-  }
-
-  .submit-btn {
-    background-color: #d33a9e;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  .submit-btn:hover {
-    background-color: #b8328b;
-  }
-</style>
-@endsection
 @section('content')
 <div class="row mt-4">
   <div class="col-12">
@@ -105,7 +48,7 @@
                 <label for="">Status</label>
                 <select name="status" id="" class="form-control">
                   <option value="">Select Status</option>
-                  <option value="0" {{request()->status ==  "0" ? 'selected' : ''}}>pending</option>
+                  <option value="0" {{request()->status == "0" ? 'selected' : ''}}>pending</option>
                   <option value="1" {{request()->status == 1 ? 'selected' : ''}}>approved</option>
                   <option value="2" {{request()->status == 2 ? 'selected' : ''}}>Reject</option>
                 </select>
@@ -140,6 +83,8 @@
             <th>PlayerName</th>
             <th>AgentName</th>
             <th>Requested Amount</th>
+            <th>Before Amount</th>
+            <th>After Amount</th>
             <th>Payment Method</th>
             <th>Status</th>
             <th>DateTime</th>
@@ -153,6 +98,8 @@
               <td>{{ $deposit->user->name }}</td>
               <td><span class="badge text-bg-warning text-white ">{{$deposit->user->parent->name}}</span></td>
               <td class="amount">{{ number_format($deposit->amount) }}</td>
+              <td class="amount">{{ number_format($deposit->before_amount) }}</td>
+              <td class="amount">{{ number_format($deposit->after_amount) }}</td>
               <td>{{ $deposit->bank->paymentType->name }}</td>
               <td>
                 @if ($deposit->status == 0)
@@ -193,7 +140,7 @@
         document.getElementById('export-csv').addEventListener('click', function() {
           dataTableSearch.export({
             type: "csv",
-            filename: "withdraw",
+            filename: "deposit",
           });
         });
       });

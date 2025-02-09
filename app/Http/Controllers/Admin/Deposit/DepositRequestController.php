@@ -27,8 +27,8 @@ class DepositRequestController extends Controller
             $agents = $user->children()->get();
         }
 
-        $startDate = $request->start_date ? Carbon::parse($request->start_date)->format('Y-m-d H:i:s') : Carbon::today()->startOfDay()->format('Y-m-d H:i:s');
-        $endDate = $request->end_date ? Carbon::parse($request->end_date)->format('Y-m-d H:i:s') : Carbon::today()->endOfDay()->format('Y-m-d H:i:s');
+        $startDate = $request->start_date ? Carbon::parse($request->start_date)->format('Y-m-d H:i') : Carbon::today()->startOfDay()->format('Y-m-d H:i');
+        $endDate = $request->end_date ? Carbon::parse($request->end_date)->format('Y-m-d H:i') : Carbon::today()->endOfDay()->format('Y-m-d H:i');
 
         $deposits = $this->getDepositRequestsQuery($request, $agentIds, $startDate, $endDate)
             ->latest()
@@ -64,11 +64,17 @@ class DepositRequestController extends Controller
 
             $deposit->update([
                 'status' => $request->status,
+                'before_amount' => $player->balanceFloat,
             ]);
 
             if ($request->status == 1) {
                 app(WalletService::class)->transfer($agent, $player, $request->amount, TransactionName::CreditTransfer, ['agent_id' => Auth::id()]);
             }
+
+            $deposit->update([
+                'status' => $request->status,
+                'after_amount' => $player->balanceFloat,
+            ]);
 
             return redirect()->route('admin.agent.deposit')->with('success', 'Deposit status updated successfully!');
         } catch (Exception $e) {

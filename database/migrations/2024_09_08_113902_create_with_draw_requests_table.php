@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('account_no');
             $table->unsignedBigInteger('payment_type_id');
             $table->unsignedBigInteger('amount');
+            $table->integer('before_amount')->nullable();
+            $table->integer('after_amount')->nullable();
             $table->tinyInteger('status')->default(0);
             $table->longText('note')->nullable();
             $table->timestamps();
