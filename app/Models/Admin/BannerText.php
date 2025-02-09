@@ -2,6 +2,7 @@
 
 namespace App\Models\Admin;
 
+use App\Models\BannerTextAgent;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -14,28 +15,38 @@ class BannerText extends Model
     protected $fillable = [
         'text',
         'agent_id',
-        'admin_id',
     ];
 
     public function agent()
     {
-        return $this->belongsTo(User::class, 'agent_id'); // The admin that owns the banner text
+        return $this->belongsTo(User::class, 'agent_id');
+    }
+
+    public function bannerTextAgents()
+    {
+        return $this->hasMany(BannerTextAgent::class);
     }
 
     public function scopeAgent($query)
     {
-        return $query->where('agent_id', Auth::user()->id);
+        return $query->whereHas('bannerTextAgents', function ($query) {
+            $query->where('agent_id', Auth::id());
+        });
     }
 
     public function scopeAgentPlayer($query)
     {
-        return $query->where('agent_id', auth()->user()->agent_id);
+        return $query->whereHas('bannerTextAgents', function ($query) {
+            $query->where('agent_id', Auth::user()->agent_id);
+        });
     }
 
     public function scopeMaster($query)
     {
         $agents = User::find(auth()->user()->id)->agents()->pluck('id')->toArray();
 
-        return $query->whereIn('agent_id', $agents);
+        return $query->whereHas('bannerTextAgents', function ($query) use ($agents) {
+            $query->whereIn('agent_id', $agents);
+        });
     }
 }

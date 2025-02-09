@@ -1,19 +1,4 @@
 @extends('admin_layouts.app')
-@section('styles')
-<style>
-  .transparent-btn {
-    background: none;
-    border: none;
-    padding: 0;
-    outline: none;
-    cursor: pointer;
-    box-shadow: none;
-    appearance: none;
-    /* For some browsers */
-  }
-</style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css">
-@endsection
 @section('content')
 <div class="row mt-4">
   <div class="col-12">
@@ -170,15 +155,5 @@ $(document).ready(function () {
     });
   });
 </script>
-@if(session()->has('success'))
-<script>
-  Swal.fire({
-    icon: 'success',
-    title: '{{ session('
-    success ') }}',
-    showConfirmButton: false,
-    timer: 1500
-  })
-</script>
-@endif
+
 @endsection

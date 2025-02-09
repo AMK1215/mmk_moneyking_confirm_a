@@ -3,15 +3,12 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\UserPaymentRequest;
 use App\Models\Admin\Bank;
 use App\Models\BankAgent;
 use App\Models\PaymentType;
-use App\Models\UserPayment;
 use App\Traits\AuthorizedCheck;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\File;
 
 class BankController extends Controller
 {
@@ -127,19 +124,15 @@ class BankController extends Controller
             'account_number' => 'required|numeric',
             'payment_type_id' => 'required|exists:payment_types,id',
         ]);
-
-        $bank->update([
-            'account_name' => $request->account_name,
-            'account_number' => $request->account_number,
-            'payment_type_id' => $request->payment_type_id,
-        ]);
+        $bank->update($data);
 
         if ($request->type === 'single') {
             $agentId = $isMaster ? $request->agent_id : $user->id;
-            $bank->bankAgents()->update([
+            $bank->bankAgents()->delete();
+            BankAgent::create([
                 'agent_id' => $agentId,
+                'bank_id' => $bank->id,
             ]);
-
         } elseif ($request->type === 'all') {
             foreach ($user->agents as $agent) {
                 $bank->bankAgents()->updateOrCreate(
@@ -148,7 +141,6 @@ class BankController extends Controller
                 );
             }
         }
-        $bank->update($data);
 
         return redirect(route('admin.banks.index'))->with('success', 'Bank Updated Successfully.');
     }

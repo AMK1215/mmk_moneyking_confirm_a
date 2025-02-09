@@ -113,6 +113,7 @@ class PlayerController extends Controller
                 'register_ip' => $request->ip(),
                 'user_id' => $player->id,
                 'user_agent' => $request->userAgent(),
+                'ip_address' => $request->ip()
             ]);
 
             return redirect()->back()

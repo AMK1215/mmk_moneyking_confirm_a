@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Api\V1\Player;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Api\V1\SeamlessTransactionResource;
-use App\Models\User;
 use App\Traits\HttpResponses;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -12,7 +11,7 @@ use Illuminate\Support\Traits\Purse;
 
 class WagerController extends Controller
 {
-    use HttpResponses, Purse;
+    use HttpResponses;
 
     // to do utc time
     public function index(Request $request)

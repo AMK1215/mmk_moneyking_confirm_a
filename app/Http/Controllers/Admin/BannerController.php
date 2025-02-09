@@ -4,12 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Admin\Banner;
+use App\Models\BannerAgent;
 use App\Traits\AuthorizedCheck;
 use App\Traits\ImageUpload;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\File;
-use Illuminate\Validation\Rule;
 
 class BannerController extends Controller
 {
@@ -22,9 +21,11 @@ class BannerController extends Controller
 
     public function index()
     {
-        $auth = Auth::user();
+        $auth = auth()->user();
         $this->MasterAgentRoleCheck();
-        $banners = $auth->hasPermission('master_access') ? Banner::query()->master()->latest()->get() : Banner::query()->agent()->latest()->get();
+        $banners = $auth->hasPermission('master_access') ?
+            Banner::query()->master()->latest()->get() :
+            Banner::query()->agent()->latest()->get();
 
         return view('admin.banners.index', compact('banners'));
     }
@@ -62,18 +63,23 @@ class BannerController extends Controller
 
         if ($type === 'single') {
             $agentId = $isMaster ? $request->agent_id : $user->id;
-            $this->FeaturePermission($agentId);
 
-            Banner::create([
+            $banner = Banner::create([
                 'mobile_image' => $mobile_image,
                 'desktop_image' => $desktop_image,
+            ]);
+            BannerAgent::create([
+                'banner_id' => $banner->id,
                 'agent_id' => $agentId,
             ]);
         } elseif ($type === 'all') {
+            $banner = Banner::create([
+                'mobile_image' => $mobile_image,
+                'desktop_image' => $desktop_image,
+            ]);
             foreach ($user->agents as $agent) {
-                Banner::create([
-                    'mobile_image' => $mobile_image,
-                    'desktop_image' => $desktop_image,
+                BannerAgent::create([
+                    'banner_id' => $banner->id,
                     'agent_id' => $agent->id,
                 ]);
             }
@@ -105,7 +111,6 @@ class BannerController extends Controller
         if (! $banner) {
             return redirect()->back()->with('error', 'Banner Not Found');
         }
-        $this->FeaturePermission($banner->agent_id);
 
         return view('admin.banners.edit', compact('banner'));
     }
@@ -116,10 +121,12 @@ class BannerController extends Controller
     public function update(Request $request, Banner $banner)
     {
         $this->MasterAgentRoleCheck();
+        $user = Auth::user();
+        $isMaster = $user->hasRole('Master');
+
         if (! $banner) {
             return redirect()->back()->with('error', 'Banner Not Found');
         }
-        $this->FeaturePermission($banner->agent_id);
         $request->validate([
             'mobile_image' => 'image|max:2048',
             'desktop_image' => 'image|max:2048',
@@ -127,9 +134,24 @@ class BannerController extends Controller
 
         $this->deleteImagesIfProvided($banner, $request);
 
-        $updateData = $this->prepareUpdateData($request, $banner);
+        $this->UpdateData($request, $banner);
 
-        $banner->update($updateData);
+        if ($request->type === 'single') {
+            $agentId = $isMaster ? $request->agent_id : $user->id;
+            $banner->bannerAgents()->delete();
+            BannerAgent::create([
+                'agent_id' => $agentId,
+                'banner_id' => $banner->id,
+            ]);
+
+        } elseif ($request->type === 'all') {
+            foreach ($user->agents as $agent) {
+                $banner->bannerAgents()->updateOrCreate(
+                    ['agent_id' => $agent->id],
+                    ['banner_id' => $banner->id]
+                );
+            }
+        }
 
         return redirect(route('admin.banners.index'))->with('success', 'Banner Image Updated.');
     }
@@ -168,7 +190,7 @@ class BannerController extends Controller
     /**
      * Prepare data for updating the banner.
      */
-    private function prepareUpdateData(Request $request, Banner $banner): array
+    private function UpdateData(Request $request, Banner $banner): Banner
     {
         $updateData = ['description' => $request->input('description')];
 
@@ -183,7 +205,8 @@ class BannerController extends Controller
         } else {
             $updateData['desktop_image'] = $banner->desktop_image;
         }
+        $banner->update($updateData);
 
-        return $updateData;
+        return $banner;
     }
 }

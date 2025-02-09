@@ -34,10 +34,8 @@
     <script src="{{ asset('admin_app/assets/js/core/bootstrap.min.js') }}"></script>
     <script src="{{ asset('admin_app/assets/js/plugins/perfect-scrollbar.min.js') }}"></script>
     <script src="{{ asset('admin_app/assets/js/plugins/smooth-scrollbar.min.js') }}"></script>
-    <script src="{{ asset('admin_app/assets/js/plugins/choices.min.js') }}"></script>
-    <script src="{{ asset('admin_app/assets/js/plugins/quill.min.js') }}"></script>
     <script src="{{ asset('admin_app/assets/js/plugins/datatables.js') }}"></script>
-    <script src="{{ asset('admin_app/assets/js/plugins/datatables.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
 
     <script>
         var win = navigator.platform.indexOf('Win') > -1;
@@ -49,6 +47,21 @@
         }
     </script>
     <script src="{{ asset('admin_app/assets/js/material-dashboard.min.js?v=3.0.6') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $("#singleAgent").hide();
+            $("#single").on("change", function() {
+                if (this.checked) {
+                    $("#singleAgent").show();
+                }
+            });
+            $("#all").on("change", function() {
+                if (this.checked) {
+                    $("#singleAgent").hide();
+                }
+            });
+        });
+    </script>
     <script>
         $(document).ready(function() {
             $('input[name="start_date"]').flatpickr({

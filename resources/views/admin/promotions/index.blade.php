@@ -22,7 +22,7 @@
       <div class="card-header pb-0">
         <div class="d-lg-flex">
           <div>
-            <h5 class="mb-0">Promotions Dashboards</h5>
+            <h5 class="mb-0">Promotions</h5>
           </div>
           <div class="ms-auto my-auto mt-lg-0 mt-4">
             <div class="ms-auto my-auto">
@@ -37,7 +37,6 @@
             <tr>
               <th>#</th>
               <th>Image</th>
-              <th>Agent</th>
               <th>Created At</th>
               <th>Action</th>
             </tr>
@@ -49,9 +48,7 @@
               <td>
                 <img width="150px" class="img-thumbnail" src="{{ $promotion->img_url }}" alt="">
               </td>
-              <td>{{ $promotion->agent->name }}</td>
               <td class="text-sm font-weight-normal">{{ $promotion->created_at->format('F j, Y') }}</td>
-              {{-- <td class="text-sm font-weight-normal">{{ $promotion->updated_at->format('F j, Y') }}</td> --}}
               <td>
                 <a href="{{ route('admin.promotions.edit', $promotion->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Edit Banner"><i class="material-icons-round text-secondary position-relative text-lg">mode_edit</i></a>
                 <a href="{{ route('admin.promotions.show', $promotion->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Preview Banner Detail">

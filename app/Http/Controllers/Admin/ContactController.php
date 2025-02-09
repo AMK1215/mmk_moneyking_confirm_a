@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Contact;
+use App\Models\ContactAgent;
 use App\Models\ContactType;
 use App\Traits\AuthorizedCheck;
 use Illuminate\Http\Request;
@@ -20,7 +21,9 @@ class ContactController extends Controller
     {
         $auth = auth()->user();
         $this->MasterAgentRoleCheck();
-        $contacts = $auth->hasPermission('master_access') ? Contact::query()->master()->latest()->get() : Contact::query()->agent()->latest()->get();
+        $contacts = $auth->hasPermission('master_access') ?
+            Contact::query()->master()->latest()->get() :
+            Contact::query()->agent()->latest()->get();
 
         return view('admin.contact.index', compact('contacts'));
     }
@@ -45,7 +48,6 @@ class ContactController extends Controller
         $user = Auth::user();
         $isMaster = $user->hasRole('Master');
 
-        // Validate the request
         $request->validate([
             'link' => 'required',
             'contact_type_id' => 'required|exists:contact_types,id',
@@ -57,16 +59,22 @@ class ContactController extends Controller
         if ($type === 'single') {
             $agentId = $isMaster ? $request->agent_id : $user->id;
             $this->FeaturePermission($agentId);
-            Contact::create([
+            $contact = Contact::create([
                 'link' => $request->link,
                 'contact_type_id' => $request->contact_type_id,
+            ]);
+            ContactAgent::create([
+                'contact_id' => $contact->id,
                 'agent_id' => $agentId,
             ]);
         } elseif ($type === 'all') {
+            $contact = Contact::create([
+                'link' => $request->link,
+                'contact_type_id' => $request->contact_type_id,
+            ]);
             foreach ($user->agents as $agent) {
-                Contact::create([
-                    'link' => $request->link,
-                    'contact_type_id' => $request->contact_type_id,
+                ContactAgent::create([
+                    'bank_id' => $contact->id,
                     'agent_id' => $agent->id,
                 ]);
             }
@@ -103,18 +111,38 @@ class ContactController extends Controller
     public function update(Request $request, Contact $contact)
     {
         $this->MasterAgentRoleCheck();
+        $user = Auth::user();
+        $isMaster = $user->hasRole('Master');
+
         if (! $contact) {
             return redirect()->back()->with('error', 'Banner Text Not Found');
         }
-        $this->FeaturePermission($contact->agent_id);
+
         $data = $request->validate([
             'link' => 'required',
             'contact_type_id' => 'required|exists:contact_types,id',
         ]);
+
         $contact->update($data);
 
-        return redirect()->route('admin.contact.index')->with('success', 'Contact updated successfully');
+        if ($request->type === 'single') {
+            $agentId = $isMaster ? $request->agent_id : $user->id;
+            $contact->contactAgents()->delete();
+            ContactAgent::create([
+                'agent_id' => $agentId,
+                'contact_id' => $contact->id,
+            ]);
 
+        } elseif ($request->type === 'all') {
+            foreach ($user->agents as $agent) {
+                $contact->contactAgents()->updateOrCreate(
+                    ['agent_id' => $agent->id],
+                    ['contact_id' => $contact->id]
+                );
+            }
+        }
+
+        return redirect()->route('admin.contact.index')->with('success', 'Contact updated successfully');
     }
 
     /**
@@ -126,8 +154,7 @@ class ContactController extends Controller
         if (! $contact) {
             return redirect()->back()->with('error', 'Contact Not Found');
         }
-        $this->FeaturePermission($contact->agent_id);
-        $contact->delete();
+        $contact->contactAgents()->delete();
 
         return redirect()->back()->with('success', 'Contact Deleted Successfully.');
     }

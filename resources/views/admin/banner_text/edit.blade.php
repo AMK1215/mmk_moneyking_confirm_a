@@ -69,27 +69,69 @@
     <div class="container my-auto mt-5">
       <div class="row">
         <div class="col-lg-10 col-md-2 col-12 mx-auto">
-          <div class="card">
+          <div class="card z-index-0 fadeIn3 fadeInBottom">
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
               <div class="bg-gradient-primary shadow-primary border-radius-lg py-2 pe-1">
-                <h4 class="text-white font-weight-bolder text-center mb-2">Text Edit</h4>
+                <h4 class="text-white font-weight-bolder text-center mb-2">Edit Banner Text</h4>
               </div>
             </div>
             <div class="card-body">
-              <form role="form" class="text-start" action="{{ route('admin.text.update', $text->id) }}" method="post">
+              <form role="form" class="text-start" action="{{ route('admin.text.update', $text->id) }}" method="post" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
-                <div class="mb-3">
-                    <label class="form-label text-dark" for="text">Banner Text</label>
-                    <input type="text" class="form-control border border-1 border-secondary px-3" id="text" name="text" value="{{ $text->text }}">
+                <div class="custom-form-group">
+                    <label for="title">Text</label>
+                    <input type="text" class="form-control" id="" name="text" value="{{$text->text}}">
                     @error('text')
                     <span class="text-danger d-block">*{{ $message }}</span>
                     @enderror
-                </div>
-
-                <div class="mb-3">
-                  <button class="btn btn-primary" type="submit">Edit</button>
-                </div>
+                  </div>
+                  @if(Auth::user()->hasRole('Master'))
+                  <div class="mb-3">
+                    <div class="d-flex">
+                      <div class="me-2 single" id="single">
+                        <label for="single" class="form-label">
+                          <input type="radio"
+                            name="type"
+                            value="single"
+                            class=" me-2"
+                            id="single" {{$text->bannerTextAgents->count() == 1 ? 'checked' : '' }}>
+                          Single
+                        </label>
+                      </div>
+                      <div class="me-2">
+                        <label for="all" class="form-label">
+                          <input type="radio"
+                            name="type"
+                            value="all"
+                            class=" me-2"
+                            id="all" {{$text->bannerTextAgents->count() > 1 ? 'checked' : '' }}>
+                          All
+                        </label>
+                      </div>
+                    </div>
+                    @error('type')
+                    <span class="text-danger">*{{ $message }}</span>
+                    @enderror
+                  </div>
+                  <div class="custom-form-group {{$text->bannerTextAgents->count() > 1 ? 'is-hide' : '' }} " id="singleAgent">
+                    <label for="title">Select Agent</label>
+                    <select name="agent_id" class="form-control form-select" id="">
+                      @foreach (Auth::user()->agents as $agent)
+                      <option
+                        value="{{ $agent->id }}"
+                        {{ $text->bannerTextAgents->contains('agent_id', $agent->id) ? 'selected' : '' }}>
+                        {{ $agent->name }}
+                      </option> @endforeach
+                    </select>
+                    @error('agent_id')
+                    <span class="text-danger">*{{ $message }}</span>
+                    @enderror
+                  </div>
+                  @endif
+                  <div class="custom-form-group">
+                    <button class="btn btn-primary" type="submit">Edit</button>
+                  </div>
               </form>
             </div>
           </div>
@@ -106,5 +148,16 @@
 <script src="{{ asset('admin_app/assets/js/plugins/choices.min.js') }}"></script>
 <script src="{{ asset('admin_app/assets/js/plugins/quill.min.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
-
+<script>
+  $(document).ready(function() {
+    $(".is-hide").hide();
+    $("#single").on("change", function() {
+      console.log('here');
+      $("#singleAgent").show();
+    });
+    $("#all").on("change", function() {
+      $("#singleAgent").hide();
+    });
+  });
+</script>
 @endsection

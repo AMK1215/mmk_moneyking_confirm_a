@@ -1,19 +1,5 @@
 @extends('admin_layouts.app')
-@section('styles')
-<style>
-  .transparent-btn {
-    background: none;
-    border: none;
-    padding: 0;
-    outline: none;
-    cursor: pointer;
-    box-shadow: none;
-    appearance: none;
-    /* For some browsers */
-  }
-</style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css">
-@endsection
+
 @section('content')
 <div class="row mt-4">
   <div class="col-12">
@@ -50,7 +36,6 @@
                 <img src="{{ $contact->contact_type->img_url }}" width="30px" alt="">
               </td>
               <td class="text-sm font-weight-normal">{{ $contact->contact_type->name }}</td>
-              <td class="text-sm font-weight-normal">{{ $contact->agent->name }}</td>
               <td>
                 <a href="{{ route('admin.contact.edit', $contact->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Edit Contact"><i class="material-icons-round text-secondary position-relative text-lg">mode_edit</i></a>
                 <form class="d-inline" action="{{ route('admin.contact.destroy', $contact->id) }}" method="POST">
@@ -71,10 +56,6 @@
 </div>
 @endsection
 @section('scripts')
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
-
-<script src="{{ asset('admin_app/assets/js/plugins/datatables.js') }}"></script>
 <script>
   if (document.getElementById('contact-search')) {
     const dataTableSearch = new simpleDatatables.DataTable("#contact-search", {
@@ -127,17 +108,4 @@
     });
   });
 </script>
-@if(session()->has('success'))
-<script>
-  Swal.fire({
-    icon: 'success',
-    title: '{{ session('
-    success ') }}',
-    showConfirmButton: false,
-    timer: 1500
-  })
-</script>
-@endif
-
-
 @endsection
