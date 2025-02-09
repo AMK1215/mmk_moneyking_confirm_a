@@ -36,6 +36,7 @@
     <script src="{{ asset('admin_app/assets/js/plugins/smooth-scrollbar.min.js') }}"></script>
     <script src="{{ asset('admin_app/assets/js/plugins/datatables.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
 
     <script>
         var win = navigator.platform.indexOf('Win') > -1;
@@ -49,6 +50,7 @@
     <script src="{{ asset('admin_app/assets/js/material-dashboard.min.js?v=3.0.6') }}"></script>
     <script>
         $(document).ready(function() {
+            $('.summernote').summernote();
             $("#singleAgent").hide();
             $("#single").on("change", function() {
                 if (this.checked) {

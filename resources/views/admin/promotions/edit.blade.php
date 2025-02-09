@@ -27,7 +27,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="" class="form-label text-dark">Description</label>
-                  <textarea name="description" id="" style="border: 1px solid gray;" class="form-control"> {{$promotion->description}}</textarea>
+                  <textarea name="description" id="" style="border: 1px solid gray;" class="form-control summernote"> {{$promotion->description}}</textarea>
                   @error('description')
                   <span class="text-danger d-block">*{{ $message }}</span>
                   @enderror

@@ -30,7 +30,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="inputEmail3" class="form-label text-dark">Description</label>
-                  <textarea name="description" id="" style="border: 1px solid gray;" class="form-control"></textarea>
+                  <textarea name="description" id="" style="border: 1px solid gray;" class="form-control summernote"></textarea>
                   @error('description')
                   <span class="text-danger d-block">*{{ $message }}</span>
                   @enderror
