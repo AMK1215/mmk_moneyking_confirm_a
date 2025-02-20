@@ -21,19 +21,19 @@ class UsersTableSeeder extends Seeder
         (new WalletService)->deposit($admin, 10 * 100_000000, TransactionName::CapitalDeposit);
 
         $master = $this->createUser(UserType::Master, 'Master 1', 'MK898437', '09112345678', $admin->id);
-        (new WalletService)->transfer($admin, $master, 8 * 100_000, TransactionName::CreditTransfer);
+        (new WalletService)->transfer($admin, $master, 10 * 100_000, TransactionName::CreditTransfer);
 
         $master_2 = $this->createUser(UserType::Master, 'Master 2', 'MK898438', '09112345679', $admin->id);
         (new WalletService)->transfer($admin, $master_2, 1 * 100_000, TransactionName::CreditTransfer);
 
         $agent_1 = $this->createUser(UserType::Agent, 'Agent 1', 'MKA898737', '09112345674', $master->id, 'vH4HueE9');
-        (new WalletService)->transfer($master, $agent_1, 10 * 100_0000, TransactionName::CreditTransfer);
+        (new WalletService)->transfer($master, $agent_1, 2 * 100_000, TransactionName::CreditTransfer);
 
         $agent_2 = $this->createUser(UserType::Agent, 'Agent 2', 'MKA898738', '09112345675', $master->id, '4Hvqiu7G');
-        (new WalletService)->transfer($master, $agent_2, 2 * 100_0000, TransactionName::CreditTransfer);
+        (new WalletService)->transfer($master, $agent_2, 2 * 100_000, TransactionName::CreditTransfer);
 
         $agent_3 = $this->createUser(UserType::Agent, 'Agent 3', 'MKA898739', '09112345676', $master->id, 'i0Yvb4df');
-        (new WalletService)->transfer($master, $agent_3, 2 * 100_0000, TransactionName::CreditTransfer);
+        (new WalletService)->transfer($master, $agent_3, 2 * 100_000, TransactionName::CreditTransfer);
 
         $agent_4 = $this->createUser(UserType::Agent, 'Agent 4', 'MKA898740', '09112345677', $master_2->id, 'r9Bv51Qh');
         (new WalletService)->transfer($master_2, $agent_4, 2 * 100_000, TransactionName::CreditTransfer);
