@@ -27,7 +27,7 @@ class UsersTableSeeder extends Seeder
         (new WalletService)->transfer($admin, $master_2, 1 * 100_0000, TransactionName::CreditTransfer);
 
         $agent_1 = $this->createUser(UserType::Agent, 'Agent 1', 'MKA898737', '09112345674', $master->id, 'vH4HueE9');
-        (new WalletService)->transfer($master, $agent_1, 1 * 100_0000, TransactionName::CreditTransfer);
+        (new WalletService)->transfer($master, $agent_1, 10 * 100_0000, TransactionName::CreditTransfer);
 
         $agent_2 = $this->createUser(UserType::Agent, 'Agent 2', 'MKA898738', '09112345675', $master->id, '4Hvqiu7G');
         (new WalletService)->transfer($master, $agent_2, 2 * 100_0000, TransactionName::CreditTransfer);
@@ -39,7 +39,7 @@ class UsersTableSeeder extends Seeder
         (new WalletService)->transfer($master_2, $agent_4, 2 * 100_000, TransactionName::CreditTransfer);
 
         $player_1 = $this->createUser(UserType::Player, 'Player 1', 'MKP000001', '09111111111', $agent_1->id);
-        (new WalletService)->transfer($agent_1, $player_1, 30000, TransactionName::CreditTransfer);
+        (new WalletService)->transfer($agent_1, $player_1, 5 * 30000, TransactionName::CreditTransfer);
 
         $player2 = $this->createUser(UserType::Player, 'Player3', 'MKP000003', '09111111113', $agent_1->id);
         (new WalletService)->transfer($agent_1, $player2, 0.00, TransactionName::CreditTransfer);
@@ -49,7 +49,7 @@ class UsersTableSeeder extends Seeder
         (new WalletService)->transfer($agent_1, $player4, 0.00, TransactionName::CreditTransfer);
 
         $systemWallet = $this->createUser(UserType::SystemWallet, 'SystemWallet', 'systemWallet', '09222222222');
-        (new WalletService)->deposit($systemWallet, 50 * 100_0000, TransactionName::CapitalDeposit);
+        (new WalletService)->deposit($systemWallet, 50 * 100_000000, TransactionName::CapitalDeposit);
 
     }
 
