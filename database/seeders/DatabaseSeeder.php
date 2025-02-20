@@ -47,6 +47,7 @@ class DatabaseSeeder extends Seeder
             FUNTAGameTableSeeder::class,
             SimplePlayGameTableSeeder::class,
             WFGamingSeeder::class,
+            HSWGameTableSeeder::class,
             #NetEntertainmentSeeder::class,
             #RedTigerSeeder::class,
             #BigTimeGamingSeeder::class,
