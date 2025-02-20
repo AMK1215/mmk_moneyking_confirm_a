@@ -22,43 +22,13 @@
             "IsActive": true
         },
         {
-            "ProviderCode": "WFG",
-            "ProviderName": "WFGaming",
-            "IsActive": true
-        },
-        {
-            "ProviderCode": "YBAT",
-            "ProviderName": "YellowBat",
-            "IsActive": false
-        },
-        {
-            "ProviderCode": "PGSOFT",
-            "ProviderName": "PGSoft",
-            "IsActive": false
-        },
-        {
             "ProviderCode": "EVOPLAY",
             "ProviderName": "EvoPlay",
             "IsActive": true
         },
         {
-            "ProviderCode": "EVONE",
-            "ProviderName": "Net Entertainment",
-            "IsActive": true
-        },
-        {
-            "ProviderCode": "EVORT",
-            "ProviderName": "Red Tiger",
-            "IsActive": true
-        },
-        {
-            "ProviderCode": "EVOBTG",
-            "ProviderName": "Big Time Gaming",
-            "IsActive": true
-        },
-        {
-            "ProviderCode": "EVONLC",
-            "ProviderName": "No Limit City",
+            "ProviderCode": "YBAT",
+            "ProviderName": "YellowBat",
             "IsActive": true
         },
         {
@@ -67,8 +37,8 @@
             "IsActive": true
         },
         {
-            "ProviderCode": "EVOLIVE",
-            "ProviderName": "Evolution",
+            "ProviderCode": "PGSOFT",
+            "ProviderName": "PGSoft",
             "IsActive": true
         },
         {
@@ -122,8 +92,23 @@
             "IsActive": true
         },
         {
+            "ProviderCode": "WFG",
+            "ProviderName": "WFGaming",
+            "IsActive": true
+        },
+        {
             "ProviderCode": "SAG",
             "ProviderName": "SAGaming",
+            "IsActive": true
+        },
+        {
+            "ProviderCode": "R88",
+            "ProviderName": "Rich88",
+            "IsActive": true
+        },
+        {
+            "ProviderCode": "GPD",
+            "ProviderName": "GamingPanda",
             "IsActive": true
         }
     ]

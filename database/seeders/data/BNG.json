@@ -1,6 +1,40 @@
 {
     "Game": [
         {
+            "GameId": 512075,
+            "GameCode": "512075",
+            "GameName": "3 Clover Pot Extra",
+            "GameType": 1,
+            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/bng/thumbs_square/512075.png",
+            "Method": "Slots",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 97,
+            "GameEvent": null,
+            "GameProvideCode": "BNG",
+            "GameProvideName": "BNG"
+        },
+        {
+            "GameId": 512074,
+            "GameCode": "512074",
+            "GameName": "Coin Lamp",
+            "GameType": 1,
+            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/bng/thumbs_square/512074.png",
+            "Method": "Slots",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 98,
+            "GameEvent": null,
+            "GameProvideCode": "BNG",
+            "GameProvideName": "BNG"
+        },
+        {
             "GameId": 512073,
             "GameCode": "512073",
             "GameName": "Rocket Wins",

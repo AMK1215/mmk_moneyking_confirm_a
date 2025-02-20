@@ -1,6 +1,40 @@
 {
     "Game": [
         {
+            "GameId": 517083,
+            "GameCode": "517083",
+            "GameName": "Lucky Toad ",
+            "GameType": 1,
+            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/funta/thumbs_square/517083.png",
+            "Method": "Slots",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 1996,
+            "GameEvent": null,
+            "GameProvideCode": "FUNTA",
+            "GameProvideName": "Funta"
+        },
+        {
+            "GameId": 517082,
+            "GameCode": "517082",
+            "GameName": "Mars Zhao ZiLong",
+            "GameType": 1,
+            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/funta/thumbs_square/517082.png",
+            "Method": "Slots",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 1997,
+            "GameEvent": null,
+            "GameProvideCode": "FUNTA",
+            "GameProvideName": "Funta"
+        },
+        {
             "GameId": 517081,
             "GameCode": "517081",
             "GameName": "Flame and Storm",

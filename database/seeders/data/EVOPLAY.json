@@ -2568,23 +2568,6 @@
             "GameProvideName": "EvoPlay"
         },
         {
-            "GameId": 503032,
-            "GameCode": "503032",
-            "GameName": "E.T. Lost Socks",
-            "GameType": 1,
-            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/evoplay/thumbs_square/503032.jpg",
-            "Method": "Slots",
-            "IsH5Support": true,
-            "Maintenance": "1|2|3|4|5|6",
-            "GameLobbyConfig": "",
-            "OtherName": [],
-            "HasDemo": false,
-            "Sequence": 154,
-            "GameEvent": null,
-            "GameProvideCode": "EVOPLAY",
-            "GameProvideName": "EvoPlay"
-        },
-        {
             "GameId": 503031,
             "GameCode": "503031",
             "GameName": "Lucky Girls",

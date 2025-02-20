@@ -1,6 +1,74 @@
 {
     "Game": [
         {
+            "GameId": 511197,
+            "GameCode": "511197",
+            "GameName": "Roma X Deluxe",
+            "GameType": 1,
+            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/jili/thumbs_square/511197.png",
+            "Method": "Slots",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 1,
+            "GameEvent": null,
+            "GameProvideCode": "JILI",
+            "GameProvideName": "JILI"
+        },
+        {
+            "GameId": 511196,
+            "GameCode": "511196",
+            "GameName": "Cricket War",
+            "GameType": 4,
+            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/jili/thumbs_square/511196.png",
+            "Method": "-",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 2,
+            "GameEvent": null,
+            "GameProvideCode": "JILI",
+            "GameProvideName": "JILI"
+        },
+        {
+            "GameId": 511195,
+            "GameCode": "511195",
+            "GameName": "3 Coin Wild Horse",
+            "GameType": 1,
+            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/jili/thumbs_square/511195.png",
+            "Method": "Slots",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 3,
+            "GameEvent": null,
+            "GameProvideCode": "JILI",
+            "GameProvideName": "JILI"
+        },
+        {
+            "GameId": 511194,
+            "GameCode": "511194",
+            "GameName": "3 LUCKY LION",
+            "GameType": 1,
+            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/jili/thumbs_square/511194.png",
+            "Method": "Slots",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 4,
+            "GameEvent": null,
+            "GameProvideCode": "JILI",
+            "GameProvideName": "JILI"
+        },
+        {
             "GameId": 511193,
             "GameCode": "511193",
             "GameName": "Keno Super Chance",
@@ -12,7 +80,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 1,
+            "Sequence": 5,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -29,7 +97,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 2,
+            "Sequence": 6,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -46,7 +114,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 3,
+            "Sequence": 7,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -63,7 +131,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 4,
+            "Sequence": 8,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -80,7 +148,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 5,
+            "Sequence": 9,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -97,7 +165,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 5,
+            "Sequence": 9,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -114,7 +182,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 6,
+            "Sequence": 10,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -131,7 +199,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 6,
+            "Sequence": 10,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -148,7 +216,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 7,
+            "Sequence": 11,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -165,7 +233,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 7,
+            "Sequence": 11,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -182,7 +250,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 8,
+            "Sequence": 12,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -199,7 +267,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 8,
+            "Sequence": 12,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -216,7 +284,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 9,
+            "Sequence": 13,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -233,7 +301,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 9,
+            "Sequence": 13,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -250,7 +318,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 10,
+            "Sequence": 14,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -267,7 +335,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 10,
+            "Sequence": 14,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -284,7 +352,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 10,
+            "Sequence": 14,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -301,7 +369,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 10,
+            "Sequence": 14,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -318,7 +386,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 10,
+            "Sequence": 14,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -335,7 +403,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 10,
+            "Sequence": 14,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -352,7 +420,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 10,
+            "Sequence": 14,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -369,7 +437,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 10,
+            "Sequence": 14,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -386,7 +454,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 11,
+            "Sequence": 15,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -403,7 +471,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 12,
+            "Sequence": 16,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -420,7 +488,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 13,
+            "Sequence": 17,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -437,7 +505,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 109,
+            "Sequence": 113,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -454,7 +522,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 110,
+            "Sequence": 114,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -471,7 +539,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 111,
+            "Sequence": 115,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -488,7 +556,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 112,
+            "Sequence": 116,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -505,7 +573,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 113,
+            "Sequence": 117,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -522,7 +590,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 114,
+            "Sequence": 118,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -539,7 +607,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 115,
+            "Sequence": 119,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -556,7 +624,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 116,
+            "Sequence": 120,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -573,7 +641,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 117,
+            "Sequence": 121,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -590,7 +658,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 118,
+            "Sequence": 122,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -607,7 +675,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 119,
+            "Sequence": 123,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -624,7 +692,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 120,
+            "Sequence": 124,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -641,7 +709,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 121,
+            "Sequence": 125,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -658,7 +726,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 122,
+            "Sequence": 126,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -675,7 +743,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 123,
+            "Sequence": 127,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -692,7 +760,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 124,
+            "Sequence": 128,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -709,7 +777,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 125,
+            "Sequence": 129,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -726,7 +794,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 126,
+            "Sequence": 130,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -743,7 +811,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 127,
+            "Sequence": 131,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -760,7 +828,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 128,
+            "Sequence": 132,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -777,7 +845,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 129,
+            "Sequence": 133,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -794,7 +862,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 130,
+            "Sequence": 134,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -811,7 +879,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 131,
+            "Sequence": 135,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -828,7 +896,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 132,
+            "Sequence": 136,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -845,7 +913,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 133,
+            "Sequence": 137,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -862,7 +930,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 134,
+            "Sequence": 138,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -879,7 +947,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 135,
+            "Sequence": 139,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -896,7 +964,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 136,
+            "Sequence": 140,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -913,7 +981,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 137,
+            "Sequence": 141,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -930,7 +998,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 138,
+            "Sequence": 142,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -947,7 +1015,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 139,
+            "Sequence": 143,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -964,7 +1032,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 140,
+            "Sequence": 144,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -981,7 +1049,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 141,
+            "Sequence": 145,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -998,7 +1066,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 142,
+            "Sequence": 146,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1015,7 +1083,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 143,
+            "Sequence": 147,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1032,7 +1100,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 145,
+            "Sequence": 149,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1049,7 +1117,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 146,
+            "Sequence": 150,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1066,7 +1134,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 148,
+            "Sequence": 152,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1083,7 +1151,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 149,
+            "Sequence": 153,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1100,7 +1168,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 150,
+            "Sequence": 154,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1117,7 +1185,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 151,
+            "Sequence": 155,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1134,7 +1202,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 152,
+            "Sequence": 156,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1151,7 +1219,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 153,
+            "Sequence": 157,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1168,7 +1236,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 154,
+            "Sequence": 158,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1185,7 +1253,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 155,
+            "Sequence": 159,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1202,7 +1270,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 156,
+            "Sequence": 160,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1219,7 +1287,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 157,
+            "Sequence": 161,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1236,7 +1304,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 158,
+            "Sequence": 162,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1253,7 +1321,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 159,
+            "Sequence": 163,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1270,7 +1338,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 160,
+            "Sequence": 164,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1287,7 +1355,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 161,
+            "Sequence": 165,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1304,7 +1372,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 162,
+            "Sequence": 166,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1321,7 +1389,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 163,
+            "Sequence": 167,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1338,7 +1406,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 164,
+            "Sequence": 168,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1355,7 +1423,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 165,
+            "Sequence": 169,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1372,7 +1440,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 166,
+            "Sequence": 170,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1389,7 +1457,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 167,
+            "Sequence": 171,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1406,7 +1474,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 168,
+            "Sequence": 172,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1423,7 +1491,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 169,
+            "Sequence": 173,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1440,7 +1508,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 171,
+            "Sequence": 175,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1457,7 +1525,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 172,
+            "Sequence": 176,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1474,7 +1542,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 173,
+            "Sequence": 177,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1491,7 +1559,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 174,
+            "Sequence": 178,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1508,7 +1576,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 175,
+            "Sequence": 179,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1525,7 +1593,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 176,
+            "Sequence": 180,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1542,7 +1610,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 177,
+            "Sequence": 181,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1559,7 +1627,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 178,
+            "Sequence": 182,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1576,7 +1644,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 179,
+            "Sequence": 183,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1593,7 +1661,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 180,
+            "Sequence": 184,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1610,7 +1678,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 183,
+            "Sequence": 187,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1627,7 +1695,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 184,
+            "Sequence": 188,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1644,7 +1712,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 185,
+            "Sequence": 189,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1661,7 +1729,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 186,
+            "Sequence": 190,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1678,7 +1746,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 187,
+            "Sequence": 191,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1695,7 +1763,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 188,
+            "Sequence": 192,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1712,7 +1780,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 189,
+            "Sequence": 193,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1729,7 +1797,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 190,
+            "Sequence": 194,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1746,7 +1814,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 191,
+            "Sequence": 195,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1763,7 +1831,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 192,
+            "Sequence": 196,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1780,7 +1848,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 193,
+            "Sequence": 197,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1797,7 +1865,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 194,
+            "Sequence": 198,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1814,7 +1882,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 195,
+            "Sequence": 199,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1831,7 +1899,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 196,
+            "Sequence": 200,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1848,7 +1916,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 197,
+            "Sequence": 201,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1865,7 +1933,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 198,
+            "Sequence": 202,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1882,7 +1950,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 199,
+            "Sequence": 203,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1899,7 +1967,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 200,
+            "Sequence": 204,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1916,7 +1984,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 201,
+            "Sequence": 205,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1933,7 +2001,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 202,
+            "Sequence": 206,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1950,7 +2018,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 203,
+            "Sequence": 207,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1967,7 +2035,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 203,
+            "Sequence": 207,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -1984,7 +2052,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 204,
+            "Sequence": 208,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2001,7 +2069,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 204,
+            "Sequence": 208,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2018,7 +2086,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 205,
+            "Sequence": 209,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2035,7 +2103,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 205,
+            "Sequence": 209,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2052,7 +2120,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 205,
+            "Sequence": 209,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2069,7 +2137,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 206,
+            "Sequence": 210,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2086,7 +2154,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 206,
+            "Sequence": 210,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2103,7 +2171,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 207,
+            "Sequence": 211,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2120,7 +2188,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 207,
+            "Sequence": 211,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2137,7 +2205,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 208,
+            "Sequence": 212,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2154,7 +2222,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 208,
+            "Sequence": 212,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2171,7 +2239,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 209,
+            "Sequence": 213,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2188,7 +2256,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 210,
+            "Sequence": 214,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2205,7 +2273,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 211,
+            "Sequence": 215,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2222,7 +2290,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 212,
+            "Sequence": 216,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2239,7 +2307,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 213,
+            "Sequence": 217,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2256,7 +2324,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 214,
+            "Sequence": 218,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2273,7 +2341,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 215,
+            "Sequence": 219,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2290,7 +2358,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 216,
+            "Sequence": 220,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2307,7 +2375,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 217,
+            "Sequence": 221,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2324,7 +2392,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 218,
+            "Sequence": 222,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2341,7 +2409,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 219,
+            "Sequence": 223,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2358,7 +2426,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 220,
+            "Sequence": 224,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2375,7 +2443,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 221,
+            "Sequence": 225,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2392,7 +2460,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 222,
+            "Sequence": 226,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2409,7 +2477,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 223,
+            "Sequence": 227,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2426,7 +2494,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 224,
+            "Sequence": 228,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2443,7 +2511,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 225,
+            "Sequence": 229,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2460,7 +2528,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 226,
+            "Sequence": 230,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2477,7 +2545,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 227,
+            "Sequence": 231,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2494,7 +2562,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 228,
+            "Sequence": 232,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2511,7 +2579,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 229,
+            "Sequence": 233,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2528,7 +2596,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 230,
+            "Sequence": 234,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2545,7 +2613,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 231,
+            "Sequence": 235,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2562,7 +2630,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 232,
+            "Sequence": 236,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2579,7 +2647,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 233,
+            "Sequence": 237,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2596,7 +2664,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 234,
+            "Sequence": 238,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2613,7 +2681,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 235,
+            "Sequence": 239,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2630,7 +2698,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 236,
+            "Sequence": 240,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2647,7 +2715,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 237,
+            "Sequence": 241,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2664,7 +2732,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 238,
+            "Sequence": 242,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2681,7 +2749,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 239,
+            "Sequence": 243,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2698,7 +2766,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 240,
+            "Sequence": 244,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2715,7 +2783,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 241,
+            "Sequence": 245,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2732,7 +2800,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 242,
+            "Sequence": 246,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2749,7 +2817,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 243,
+            "Sequence": 247,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2766,7 +2834,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 244,
+            "Sequence": 248,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2783,7 +2851,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 305,
+            "Sequence": 309,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2800,7 +2868,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 306,
+            "Sequence": 310,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2817,7 +2885,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 307,
+            "Sequence": 311,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2834,7 +2902,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 308,
+            "Sequence": 312,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2851,7 +2919,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 309,
+            "Sequence": 313,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2868,7 +2936,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 310,
+            "Sequence": 314,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2885,7 +2953,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 311,
+            "Sequence": 315,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2902,7 +2970,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 312,
+            "Sequence": 316,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2919,7 +2987,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 313,
+            "Sequence": 317,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2936,7 +3004,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 314,
+            "Sequence": 318,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2953,7 +3021,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 315,
+            "Sequence": 319,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2970,7 +3038,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 316,
+            "Sequence": 320,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -2987,7 +3055,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 317,
+            "Sequence": 321,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -3004,7 +3072,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 318,
+            "Sequence": 322,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -3021,7 +3089,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 319,
+            "Sequence": 323,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -3038,7 +3106,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 320,
+            "Sequence": 324,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -3055,7 +3123,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 321,
+            "Sequence": 325,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -3072,7 +3140,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 404,
+            "Sequence": 408,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -3089,7 +3157,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 405,
+            "Sequence": 409,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -3106,7 +3174,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 406,
+            "Sequence": 410,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -3123,7 +3191,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 407,
+            "Sequence": 411,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -3140,7 +3208,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 408,
+            "Sequence": 412,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -3157,7 +3225,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 409,
+            "Sequence": 413,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -3174,7 +3242,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 410,
+            "Sequence": 414,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -3191,7 +3259,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 411,
+            "Sequence": 415,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -3208,7 +3276,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 412,
+            "Sequence": 416,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -3225,7 +3293,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 413,
+            "Sequence": 417,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -3242,7 +3310,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 414,
+            "Sequence": 418,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -3259,7 +3327,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 415,
+            "Sequence": 419,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"
@@ -3276,7 +3344,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 416,
+            "Sequence": 420,
             "GameEvent": null,
             "GameProvideCode": "JILI",
             "GameProvideName": "JILI"

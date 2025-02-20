@@ -1,6 +1,40 @@
 {
     "Game": [
         {
+            "GameId": 515084,
+            "GameCode": "515084",
+            "GameName": "Magic Treasure",
+            "GameType": 1,
+            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/ygr/thumbs_square/515084.png",
+            "Method": "Slots",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 993,
+            "GameEvent": null,
+            "GameProvideCode": "YGR",
+            "GameProvideName": "YGR"
+        },
+        {
+            "GameId": 515083,
+            "GameCode": "515083",
+            "GameName": "Dinosaur Egg 2",
+            "GameType": 1,
+            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/ygr/thumbs_square/515083.png",
+            "Method": "Slots",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 994,
+            "GameEvent": null,
+            "GameProvideCode": "YGR",
+            "GameProvideName": "YGR"
+        },
+        {
             "GameId": 515082,
             "GameCode": "515082",
             "GameName": "Maya Golden City6",

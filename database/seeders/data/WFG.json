@@ -1,6 +1,23 @@
 {
     "Game": [
         {
+            "GameId": 70018,
+            "GameCode": "70018",
+            "GameName": "You'll Rich",
+            "GameType": 1,
+            "ImageUrl": "https://gicon.sminnovtech.com/providers/wfgaming/thumbs/web/70018.png",
+            "Method": "Slots",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 1,
+            "GameEvent": null,
+            "GameProvideCode": "WFG",
+            "GameProvideName": "WFGaming"
+        },
+        {
             "GameId": 75002,
             "GameCode": "75002",
             "GameName": "WWE Crazy Wild",
@@ -12,7 +29,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 1,
+            "Sequence": 2,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -29,7 +46,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 2,
+            "Sequence": 3,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -46,7 +63,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 3,
+            "Sequence": 4,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -63,7 +80,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 4,
+            "Sequence": 5,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -80,7 +97,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 5,
+            "Sequence": 6,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -97,7 +114,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 6,
+            "Sequence": 7,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -114,7 +131,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 7,
+            "Sequence": 8,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -131,7 +148,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 8,
+            "Sequence": 9,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -148,7 +165,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 9,
+            "Sequence": 10,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -165,7 +182,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 10,
+            "Sequence": 11,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -182,7 +199,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 11,
+            "Sequence": 12,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -199,7 +216,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 12,
+            "Sequence": 13,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -216,7 +233,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 13,
+            "Sequence": 14,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -233,7 +250,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 14,
+            "Sequence": 15,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -250,7 +267,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 15,
+            "Sequence": 16,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -267,7 +284,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 16,
+            "Sequence": 17,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -284,7 +301,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 17,
+            "Sequence": 18,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -301,7 +318,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 18,
+            "Sequence": 19,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -318,7 +335,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 19,
+            "Sequence": 20,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -335,7 +352,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 20,
+            "Sequence": 21,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -352,7 +369,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 21,
+            "Sequence": 22,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -369,7 +386,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 22,
+            "Sequence": 23,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -386,7 +403,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 23,
+            "Sequence": 24,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -403,7 +420,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 24,
+            "Sequence": 25,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -420,7 +437,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 25,
+            "Sequence": 26,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -437,7 +454,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 26,
+            "Sequence": 27,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -454,7 +471,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 27,
+            "Sequence": 28,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -471,7 +488,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 28,
+            "Sequence": 29,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -488,7 +505,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 29,
+            "Sequence": 30,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -505,7 +522,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 30,
+            "Sequence": 31,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -522,7 +539,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 31,
+            "Sequence": 32,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -539,7 +556,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 32,
+            "Sequence": 33,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -556,7 +573,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 33,
+            "Sequence": 34,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -573,7 +590,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 34,
+            "Sequence": 35,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -590,7 +607,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 35,
+            "Sequence": 36,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -607,7 +624,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 36,
+            "Sequence": 37,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -624,7 +641,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 37,
+            "Sequence": 38,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -641,7 +658,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 38,
+            "Sequence": 39,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -658,7 +675,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 39,
+            "Sequence": 40,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -675,7 +692,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 40,
+            "Sequence": 41,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -692,7 +709,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 41,
+            "Sequence": 42,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -709,7 +726,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 42,
+            "Sequence": 43,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -726,7 +743,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 43,
+            "Sequence": 44,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -743,7 +760,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 44,
+            "Sequence": 45,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -760,7 +777,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 45,
+            "Sequence": 46,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -777,7 +794,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 46,
+            "Sequence": 47,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -794,7 +811,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 47,
+            "Sequence": 48,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -811,7 +828,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 48,
+            "Sequence": 49,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -828,7 +845,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 49,
+            "Sequence": 50,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"
@@ -845,7 +862,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 50,
+            "Sequence": 51,
             "GameEvent": null,
             "GameProvideCode": "WFG",
             "GameProvideName": "WFGaming"

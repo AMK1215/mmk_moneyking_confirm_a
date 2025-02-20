@@ -1,6 +1,23 @@
 {
     "Game": [
         {
+            "GameId": 519260,
+            "GameCode": "519260",
+            "GameName": "Wild Disco Night",
+            "GameType": 1,
+            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/cq9/thumbs_square/519260.png",
+            "Method": "Slots",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 198,
+            "GameEvent": null,
+            "GameProvideCode": "CQ9",
+            "GameProvideName": "CQ9"
+        },
+        {
             "GameId": 519259,
             "GameCode": "519259",
             "GameName": "Black Wukong",
