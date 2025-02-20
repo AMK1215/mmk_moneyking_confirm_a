@@ -20,6 +20,28 @@
                     <span class="sidenav-normal  ms-2  ps-1"> Win/lose Report </span>
                 </a>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white " href="{{ route('admin.backup_results.index') }}">
+                    <span class="sidenav-mini-icon"> <i class="fa-solid fa-chart-column"></i> </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> ReportBackUp(result) </span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white " href="{{ route('admin.backup_bet_n_results.index') }}">
+                    <span class="sidenav-mini-icon"> <i class="fa-solid fa-chart-column"></i> </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> ReportBackUp(bet_n_result) </span>
+                </a>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link text-white " href="{{ route('admin.reportv2.index') }}">
+                    <span class="sidenav-mini-icon"> <i class="fa-solid fa-chart-column"></i> </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> V2-Win/lose Report </span>
+                </a>
+            </li>
         @endcan
 
         @can('player_index')
@@ -59,28 +81,6 @@
                 <a class="nav-link text-white " href="{{ route('admin.agent.index') }}">
                     <span class="sidenav-mini-icon"> <i class="fa-solid fa-user"></i> </span>
                     <span class="sidenav-normal  ms-2  ps-1">Agent List</span>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link text-white " href="{{ route('admin.backup_results.index') }}">
-                    <span class="sidenav-mini-icon"> <i class="fa-solid fa-chart-column"></i> </span>
-                    <span class="sidenav-normal  ms-2  ps-1"> ReportBackUp(result) </span>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link text-white " href="{{ route('admin.backup_bet_n_results.index') }}">
-                    <span class="sidenav-mini-icon"> <i class="fa-solid fa-chart-column"></i> </span>
-                    <span class="sidenav-normal  ms-2  ps-1"> ReportBackUp(bet_n_result) </span>
-                </a>
-            </li>
-
-
-            <li class="nav-item">
-                <a class="nav-link text-white " href="{{ route('admin.reportv2.index') }}">
-                    <span class="sidenav-mini-icon"> <i class="fa-solid fa-chart-column"></i> </span>
-                    <span class="sidenav-normal  ms-2  ps-1"> V2-Win/lose Report </span>
                 </a>
             </li>
         @endcan
