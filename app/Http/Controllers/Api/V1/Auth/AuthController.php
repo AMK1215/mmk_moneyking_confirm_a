@@ -97,63 +97,7 @@ class AuthController extends Controller
 
         return $this->success([], 'User logged out successfully.');
     }
-
-    //     public function logout(Request $request)
-    // {
-    //     $user = Auth::user();
-
-    //     // Clear the session ID from the users table
-    //     $user->session_id = null;
-    //     $user->save();
-
-    //     // Log the user out
-    //     Auth::logout();
-
-    //     return $this->success([], 'User logged out successfully.');
-    // }
-    // public function login(LoginRequest $request)
-    // {
-    //     $credentials = $request->only('user_name', 'password');
-
-    //     $user = User::where('user_name', $request->user_name)->first();
-
-    //     if (! Auth::attempt($credentials)) {
-    //         return $this->error('', [
-    //             'user_name' => 'Credentials do not match!',
-    //         ], 422);
-    //         // return $this->error('', 'Credentials do not match!', 401);
-    //     }
-    //     if (Auth::user()->status == 0) {
-    //         return $this->error('', [
-    //             'user_name' => 'Your account has benn banned. Please contact your agent.',
-    //         ], 422);
-    //     }
-
-    //     $user = User::where('user_name', $request->user_name)->first();
-    //     if (! $user->hasRole('Player')) {
-    //         return $this->error('', [
-    //             'user_name' => 'You are not a player. Please contact your agent.',
-    //         ], 422);
-    //     }
-
-    //     UserLog::create([
-    //         'ip_address' => $request->ip(),
-    //         'user_id' => $user->id,
-    //         'user_agent' => $request->userAgent(),
-    //     ]);
-
-    //     return $this->success(new UserResource($user), 'User login successfully.');
-    // }
-
-    // public function logout()
-    // {
-    //     Auth::user()->currentAccessToken()->delete();
-
-    //     return $this->success([
-    //         'message' => 'Logged out successfully.',
-    //     ]);
-    // }
-
+    
     public function getUser()
     {
         return $this->success(new PlayerResource(Auth::user()), 'User Success');
@@ -246,6 +190,6 @@ class AuthController extends Controller
 
         $nextNumber = $latestPlayer ? intval(substr($latestPlayer->user_name, 3)) + 1 : 1;
 
-        return 'SPM'.str_pad($nextNumber, 6, '0', STR_PAD_LEFT);
+        return 'MK'.str_pad($nextNumber, 6, '0', STR_PAD_LEFT);
     }
 }
