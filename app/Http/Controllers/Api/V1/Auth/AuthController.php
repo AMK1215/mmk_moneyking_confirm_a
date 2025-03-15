@@ -48,22 +48,13 @@ class AuthController extends Controller
         $user = User::where('user_name', $request->user_name)->first();
         if (! $user->hasRole('Player')) {
             return $this->error('', [
-                'user_name' => 'You are not a player. Please contact your agent.',
+                'user_name' => 'You are not a player. Please contact your agent or owner.',
             ], 422);
         }
 
-        // Check if the user is already logged in from another device
-        if ($user->session_id) {
-            // Invalidate the previous session
-            $previousSession = Session::find($user->session_id);
-            if ($previousSession) {
-                $previousSession->delete(); // Delete the previous session
-            }
-        }
+        // Revoke all previous tokens for the user
+        $user->tokens()->delete();
 
-        // Store the new session ID
-        $user->session_id = session()->getId();
-        $user->save();
 
         // Log the user's login activity
         UserLog::create([
@@ -74,6 +65,53 @@ class AuthController extends Controller
 
         return $this->success(new UserResource($user), 'User login successfully.');
     }
+    // public function login(LoginRequest $request)
+    // {
+    //     $credentials = $request->only('user_name', 'password');
+
+    //     $user = User::where('user_name', $request->user_name)->first();
+
+    //     if (! Auth::attempt($credentials)) {
+    //         return $this->error('', [
+    //             'user_name' => 'Credentials do not match!',
+    //         ], 422);
+    //     }
+
+    //     if (Auth::user()->status == 0) {
+    //         return $this->error('', [
+    //             'user_name' => 'Your account has been banned. Please contact your agent.',
+    //         ], 422);
+    //     }
+
+    //     $user = User::where('user_name', $request->user_name)->first();
+    //     if (! $user->hasRole('Player')) {
+    //         return $this->error('', [
+    //             'user_name' => 'You are not a player. Please contact your agent.',
+    //         ], 422);
+    //     }
+
+    //     // Check if the user is already logged in from another device
+    //     if ($user->session_id) {
+    //         // Invalidate the previous session
+    //         $previousSession = Session::find($user->session_id);
+    //         if ($previousSession) {
+    //             $previousSession->delete(); // Delete the previous session
+    //         }
+    //     }
+
+    //     // Store the new session ID
+    //     $user->session_id = session()->getId();
+    //     $user->save();
+
+    //     // Log the user's login activity
+    //     UserLog::create([
+    //         'ip_address' => $request->ip(),
+    //         'user_id' => $user->id,
+    //         'user_agent' => $request->userAgent(),
+    //     ]);
+
+    //     return $this->success(new UserResource($user), 'User login successfully.');
+    // }
 
     public function logout(Request $request)
     {
