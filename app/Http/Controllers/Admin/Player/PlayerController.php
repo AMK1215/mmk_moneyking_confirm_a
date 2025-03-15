@@ -11,6 +11,7 @@ use App\Models\Admin\UserLog;
 use App\Models\PaymentType;
 use App\Models\User;
 use App\Services\WalletService;
+use Carbon\Carbon;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -37,36 +38,30 @@ class PlayerController extends Controller
 
         $user = Auth::user();
         $agentIds = [$user->id];
+        $agents = [];
 
+        $startDate = $request->start_date ? Carbon::parse($request->start_date)->format('Y-m-d H:i') : Carbon::today()->startOfDay()->format('Y-m-d H:i');
+        $endDate = $request->end_date ? Carbon::parse($request->end_date)->format('Y-m-d H:i') : Carbon::today()->endOfDay()->format('Y-m-d H:i');
+        
         if ($user->hasRole('Master')) {
             $agentIds = User::where('agent_id', $user->id)->pluck('id')->toArray();
+            $agents = $user->children()->get();
         }
-
+       
         $users = User::with(['roles', 'userLog'])
-            ->whereHas('roles', fn ($query) => $query->where('role_id', self::PLAYER_ROLE))
-            ->when($request->player_id, fn ($query) => $query->where('user_name', $request->player_id))
-            ->when(
-                $request->start_date && $request->end_date,
-                fn ($query) => $query->whereBetween('created_at', [
-                    $request->start_date.' 00:00:00',
-                    $request->end_date.' 23:59:59',
-                ])
-            )
-            ->when($request->ip_address, function ($query) use ($request) {
-                $query->whereHas('userLog', function ($subQuery) use ($request) {
-                    $subQuery->where('ip_address', $request->ip_address)->latest();
-                });
-            })
-            ->when($request->register_ip, function ($query) use ($request) {
-                $query->whereHas('userLog', function ($subQuery) use ($request) {
-                    $subQuery->where('register_ip', $request->register_ip);
-                });
+            ->whereHas('roles', fn($query) => $query->where('role_id', self::PLAYER_ROLE))
+            ->when($request->player_id, fn($query) => $query->where('user_name', $request->player_id))
+            ->when($startDate && $endDate, fn($query) => $query->whereBetween('created_at', [$startDate, $endDate]))
+            ->when($request->agent_id, fn($query) => $query->where('agent_id', $request->agent_id))
+            ->when($request->phone, fn($query) => $query->where('phone', $request->phone))
+            ->when($request->last_login_ip, function ($query) use ($request) {
+                $query->whereHas('userLog', fn($logQuery) => $logQuery->where('ip_address', $request->last_login_ip));
             })
             ->whereIn('agent_id', $agentIds)
             ->orderByDesc('id')
             ->get();
-
-        return view('admin.player.index', compact('users'));
+     
+        return view('admin.player.index', compact('users', 'agents'));
     }
 
     /**
@@ -336,7 +331,7 @@ class PlayerController extends Controller
 
         $nextNumber = $latestPlayer ? intval(substr($latestPlayer->user_name, 3)) + 1 : 1;
 
-        return 'SPM'.str_pad($nextNumber, 6, '0', STR_PAD_LEFT);
+        return 'MK'.str_pad($nextNumber, 6, '0', STR_PAD_LEFT);
     }
 
     private function getRefrenceId($prefix = 'REF')
