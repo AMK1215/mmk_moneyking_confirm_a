@@ -1,6 +1,57 @@
 {
     "Game": [
         {
+            "GameId": 520031,
+            "GameCode": "520031",
+            "GameName": "M Thai Hilo",
+            "GameType": 5,
+            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/sagaming/thumbs_square/520031.png",
+            "Method": "-",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 1,
+            "GameEvent": null,
+            "GameProvideCode": "SAG",
+            "GameProvideName": "SAGaming"
+        },
+        {
+            "GameId": 520032,
+            "GameCode": "520032",
+            "GameName": "D Thai Hilo",
+            "GameType": 5,
+            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/sagaming/thumbs_square/520032.png",
+            "Method": "-",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 2,
+            "GameEvent": null,
+            "GameProvideCode": "SAG",
+            "GameProvideName": "SAGaming"
+        },
+        {
+            "GameId": 520033,
+            "GameCode": "520033",
+            "GameName": "M Dragon Tiger",
+            "GameType": 5,
+            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/sagaming/thumbs_square/520033.png",
+            "Method": "-",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 3,
+            "GameEvent": null,
+            "GameProvideCode": "SAG",
+            "GameProvideName": "SAGaming"
+        },
+        {
             "GameId": 520001,
             "GameCode": "520001",
             "GameName": "M Xoc Dia",
@@ -12,7 +63,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 1,
+            "Sequence": 4,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -29,7 +80,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 2,
+            "Sequence": 5,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -46,7 +97,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 3,
+            "Sequence": 6,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -63,7 +114,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 4,
+            "Sequence": 7,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -80,7 +131,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 5,
+            "Sequence": 8,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -97,7 +148,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 6,
+            "Sequence": 9,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -114,7 +165,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 7,
+            "Sequence": 10,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -131,7 +182,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 8,
+            "Sequence": 11,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -148,7 +199,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 9,
+            "Sequence": 12,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -165,7 +216,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 10,
+            "Sequence": 13,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -182,7 +233,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 11,
+            "Sequence": 14,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -199,7 +250,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 12,
+            "Sequence": 15,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -216,7 +267,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 13,
+            "Sequence": 16,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -233,7 +284,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 14,
+            "Sequence": 17,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -250,7 +301,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 15,
+            "Sequence": 18,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -267,7 +318,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 16,
+            "Sequence": 19,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -284,7 +335,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 17,
+            "Sequence": 20,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -301,7 +352,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 18,
+            "Sequence": 21,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -318,7 +369,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 19,
+            "Sequence": 22,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -335,7 +386,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 20,
+            "Sequence": 23,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -352,7 +403,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 21,
+            "Sequence": 24,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -369,7 +420,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 22,
+            "Sequence": 25,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -386,7 +437,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 23,
+            "Sequence": 26,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -403,7 +454,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 24,
+            "Sequence": 27,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -420,7 +471,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 25,
+            "Sequence": 28,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -437,7 +488,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 26,
+            "Sequence": 29,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -454,7 +505,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 27,
+            "Sequence": 30,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -471,7 +522,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 28,
+            "Sequence": 31,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -488,7 +539,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 29,
+            "Sequence": 32,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"
@@ -505,7 +556,7 @@
             "GameLobbyConfig": "",
             "OtherName": [],
             "HasDemo": false,
-            "Sequence": 30,
+            "Sequence": 33,
             "GameEvent": null,
             "GameProvideCode": "SAG",
             "GameProvideName": "SAGaming"

@@ -868,23 +868,6 @@
             "GameProvideName": "FaChai"
         },
         {
-            "GameId": 510053,
-            "GameCode": "510053",
-            "GameName": "Tower",
-            "GameType": 3,
-            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/fachai/thumbs_square/510053.png",
-            "Method": "-",
-            "IsH5Support": true,
-            "Maintenance": "1|2|3|4|5|6",
-            "GameLobbyConfig": "",
-            "OtherName": [],
-            "HasDemo": false,
-            "Sequence": 3000,
-            "GameEvent": null,
-            "GameProvideCode": "FACHAI",
-            "GameProvideName": "FaChai"
-        },
-        {
             "GameId": 510052,
             "GameCode": "510052",
             "GameName": "Mines",

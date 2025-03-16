@@ -1,6 +1,23 @@
 {
     "Game": [
         {
+            "GameId": 512076,
+            "GameCode": "512076",
+            "GameName": "3 Aztec Temples",
+            "GameType": 1,
+            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/bng/thumbs_square/512076.png",
+            "Method": "Slots",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 96,
+            "GameEvent": null,
+            "GameProvideCode": "BNG",
+            "GameProvideName": "BNG"
+        },
+        {
             "GameId": 512075,
             "GameCode": "512075",
             "GameName": "3 Clover Pot Extra",

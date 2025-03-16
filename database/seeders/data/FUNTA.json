@@ -1,6 +1,23 @@
 {
     "Game": [
         {
+            "GameId": 517084,
+            "GameCode": "517084",
+            "GameName": "Imperial Tombs",
+            "GameType": 1,
+            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/funta/thumbs_square/517084.png",
+            "Method": "Slots",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 1995,
+            "GameEvent": null,
+            "GameProvideCode": "FUNTA",
+            "GameProvideName": "Funta"
+        },
+        {
             "GameId": 517083,
             "GameCode": "517083",
             "GameName": "Lucky Toad ",
@@ -1288,6 +1305,23 @@
             "OtherName": [],
             "HasDemo": false,
             "Sequence": 2142,
+            "GameEvent": null,
+            "GameProvideCode": "FUNTA",
+            "GameProvideName": "Funta"
+        },
+        {
+            "GameId": 517085,
+            "GameCode": "517085",
+            "GameName": "Baccarat",
+            "GameType": 4,
+            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/funta/thumbs_square/517085.png",
+            "Method": "-",
+            "IsH5Support": true,
+            "Maintenance": "1|2|3|4|5|6",
+            "GameLobbyConfig": "",
+            "OtherName": [],
+            "HasDemo": false,
+            "Sequence": 2999,
             "GameEvent": null,
             "GameProvideCode": "FUNTA",
             "GameProvideName": "Funta"

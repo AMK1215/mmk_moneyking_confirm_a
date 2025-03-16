@@ -1,23 +1,6 @@
 {
     "Game": [
         {
-            "GameId": 502134,
-            "GameCode": "502134",
-            "GameName": "Aztec Gems Megaways",
-            "GameType": 1,
-            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/pgsoft/thumbs_square/502134.png",
-            "Method": "Slots",
-            "IsH5Support": true,
-            "Maintenance": "1|2|3|4|5|6",
-            "GameLobbyConfig": "",
-            "OtherName": [],
-            "HasDemo": false,
-            "Sequence": 999,
-            "GameEvent": null,
-            "GameProvideCode": "PGSOFT",
-            "GameProvideName": "PGSoft"
-        },
-        {
             "GameId": 502131,
             "GameCode": "502131",
             "GameName": "Three Crazy Piggies",

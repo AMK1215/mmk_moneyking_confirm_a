@@ -1752,23 +1752,6 @@
             "GameProvideName": "JDB Gaming"
         },
         {
-            "GameId": 508109,
-            "GameCode": "508109",
-            "GameName": "Teen Patti 20-20",
-            "GameType": 4,
-            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/jdb/thumbs_square/508109.png",
-            "Method": "-",
-            "IsH5Support": true,
-            "Maintenance": "1|2|3|4|5|6",
-            "GameLobbyConfig": "",
-            "OtherName": [],
-            "HasDemo": false,
-            "Sequence": 500,
-            "GameEvent": null,
-            "GameProvideCode": "JDB",
-            "GameProvideName": "JDB Gaming"
-        },
-        {
             "GameId": 508108,
             "GameCode": "508108",
             "GameName": "Tongits Rush",
@@ -1866,23 +1849,6 @@
             "OtherName": [],
             "HasDemo": false,
             "Sequence": 506,
-            "GameEvent": null,
-            "GameProvideCode": "JDB",
-            "GameProvideName": "JDB Gaming"
-        },
-        {
-            "GameId": 508130,
-            "GameCode": "508130",
-            "GameName": "Cricket Burst",
-            "GameType": 3,
-            "ImageUrl": "https://gicon.sm-sspi-res.com/providers/jdb/thumbs_square/508130.png",
-            "Method": "-",
-            "IsH5Support": true,
-            "Maintenance": "1|2|3|4|5|6",
-            "GameLobbyConfig": "",
-            "OtherName": [],
-            "HasDemo": false,
-            "Sequence": 600,
             "GameEvent": null,
             "GameProvideCode": "JDB",
             "GameProvideName": "JDB Gaming"
